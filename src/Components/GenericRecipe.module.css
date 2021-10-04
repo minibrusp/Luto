@@ -1,0 +1,36 @@
+.itemContainer {
+  max-width: 375px;
+  margin: 1rem auto;
+  padding: 2rem;
+}
+
+.itemContainer h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.itemDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.itemDescription span {
+  font-weight: 600;
+}
+
+.itemImgContainer {
+  overflow: hidden;
+}
+
+.itemImgContainer img {
+  display: block;
+  width: 100%;
+  transition: 1s transform ease;
+}
+
+.itemImgContainer img:hover {
+  transform: scale(1.1);
+}

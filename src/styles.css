@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap");
+
+@import "./vars.css";
+
+/* .dark {
+  --background-color: var(--black);
+  --text-color: var(--white);
+}
+
+.light {
+  --background-color: var(--white);
+  --text-color: var(--black);
+} */
+
+body.dark {
+  --background-color: var(--black);
+  --text-color: var(--white);
+}
+body.light {
+  --background-color: var(--white);
+  --text-color: var(--black);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--background-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.5s color ease, 0.5s background ease;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color);
+}
+
+.App {
+  text-align: center;
+}
+
+header {
+  position: relative;
+}
+
+header button {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  cursor: pointer;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
+
+header button:hover {
+  background-color: transparent;
+  border: none;
+  color: var(--text-color);
+  transform: scale(1.2);
+}
+
+section {
+  margin: 2rem auto;
+  max-width: 1100px;
+}
+
+form {
+  margin: 2rem auto;
+}
+
+.landingImg {
+  height: 110px;
+}
+
+.notFoundImg {
+  width: 100%;
+  max-width: 375px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a > img {
+  width: 100%;
+  max-width: 300px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+input {
+  background: transparent;
+  color: var(--text-color);
+  border: 1px dashed var(--text-color);
+}
+
+button {
+  background: var(--background-color);
+  color: var(--text-color);
+  border: 1px dashed var(--text-color);
+}
+
+button:hover {
+  background: var(--text-color);
+  color: var(--background-color);
+}
+
+article > header {
+  border-top: 1px dashed var(--text-color);
+  padding-top: 3rem;
+}
+
+.itemContainer {
+  border: 1px dashed var(--text-color);
+}
+
+.links {
+  color: var(--text-color);
+  border: 1px dashed var(--text-color);
+  padding: 1rem;
+  margin: 1rem auto 2rem auto;
+  display: inline-block;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.3s all;
+}
+.links:hover {
+  color: var(--background-color);
+  background: var(--text-color);
+  border: 1px dashed var(--background-color);
+}
+
+.dishIngredients {
+  border-top: 1px dashed var(--text-color);
+  border-bottom: 1px dashed var(--text-color);
+}
+
+.preparation {
+  border-bottom: 1px dashed var(--text-color);
+}
+
+.preparation a {
+  color: var(--background-color);
+  background: var(--text-color);
+  border: 1px solid var(--background-color);
+}
+.preparation a:hover {
+  color: var(--text-color);
+  background: var(--background-color);
+  border: 1px dashed var(--text-color);
+}
+
+.preparation p {
+  border: 1px dashed var(--text-color);
+  border-radius: 5px;
+}

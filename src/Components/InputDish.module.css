@@ -1,0 +1,17 @@
+@import "../vars.css";
+
+.button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  padding: 1rem;
+  background-color: transparent;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.input {
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 1rem 0.5rem 1rem 0;
+  font-family: "Montserrat", sans-serif;
+}

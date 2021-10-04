@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { v4 as uuidv4 } from "uuid";
 import styles from "./RecipeDish.module.css";
+import img404 from "../assets/404.png";
 
 const RecipeDish = (prop = "") => {
   const [recipe, setRecipe] = useState("");
@@ -82,7 +83,12 @@ const RecipeDish = (prop = "") => {
       </div>
     );
   } else {
-    return <div>Loading</div>;
+    return (
+      <div>
+        <h2>Loading . . .</h2>
+        <img src={img404} alt="404" className="notFoundImg" />
+      </div>
+    );
   }
 };
 
